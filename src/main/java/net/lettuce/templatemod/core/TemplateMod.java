@@ -1,4 +1,4 @@
-package net.lettuce.missinghorsearmors.core;
+package net.lettuce.templatemod.core;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTab;
@@ -16,17 +16,17 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(MissingHorseArmors.MOD_ID)
-public class MissingHorseArmors {
-    public static final String MOD_ID = "missing_horse_armors";
+@Mod(TemplateMod.MOD_ID)
+public class TemplateMod {
+    public static final String MOD_ID = "template_mod";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    public MissingHorseArmors() {
+    public TemplateMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
-        MHAItems.register(modEventBus);
+        TemplateItems.register(modEventBus);
         modEventBus.addListener(this::addCreative);
     }
 
@@ -34,18 +34,12 @@ public class MissingHorseArmors {
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.accept(MHAItems.CHAINMAIL_HORSE_ARMOR);
-            event.accept(MHAItems.NETHERITE_HORSE_ARMOR);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(TemplateItems.TEMPLATE_ITEM);
 
             event.getEntries().putAfter(
                     Items.LEATHER_HORSE_ARMOR.getDefaultInstance(),
-                    MHAItems.CHAINMAIL_HORSE_ARMOR.get().getDefaultInstance(),
-                    CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
-            );
-            event.getEntries().putAfter(
-                    Items.DIAMOND_HORSE_ARMOR.getDefaultInstance(),
-                    MHAItems.NETHERITE_HORSE_ARMOR.get().getDefaultInstance(),
+                    TemplateItems.TEMPLATE_ITEM.get().getDefaultInstance(),
                     CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS
             );
         }
