@@ -3,13 +3,13 @@ loaderVersion="[46,)"
 license="MIT License"
 
 [[mods]]
-modId="template_mod"
-version="1.0.0"
-displayName="Template Mod"
-displayURL=""
-authors="Licit Lettuce"
-credits="Mod by Licit Lettuce"
-description='''Description Goes Here'''
+modId="mario_64_paintings"
+version="1.0.3"
+displayName="Mario 64 Paintings"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/mario-64-paintings"
+authors="licitLettuce"
+credits="licitLettuce (Lead Developer, Artist, Game Design) -All assets included in this mod are based off of assets created by Nintendo"
+description='''Adds Iconic Paintings from Super Mario 64'''
 logoFile="logo.png"
 
 [[dependencies.otherspace]]
