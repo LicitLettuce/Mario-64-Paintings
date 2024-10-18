@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "mario_64_paintings:tiny_huge_island_large",
+    "mario_64_paintings:bob_omb_battlefield",
+    "mario_64_paintings:whomps_fortress",
+    "mario_64_paintings:jolly_roger_bay",
+    "mario_64_paintings:dire_dire_docks",
+    "mario_64_paintings:lethal_lava_land",
+    "mario_64_paintings:wet_dry_world",
+    "mario_64_paintings:tall_tall_mountain",
+    "mario_64_paintings:tiny_huge_island",
+    "mario_64_paintings:bowser",
+    "mario_64_paintings:peach",
+    "mario_64_paintings:cool_cool_mountain",
+    "mario_64_paintings:bob_omb_battlefield_small",
+    "mario_64_paintings:whomps_fortress_small",
+    "mario_64_paintings:cool_cool_mountain_small",
+    "mario_64_paintings:jolly_roger_bay_small",
+    "mario_64_paintings:dire_dire_docks_small",
+    "mario_64_paintings:lethal_lava_land_small",
+    "mario_64_paintings:wet_dry_world_small",
+    "mario_64_paintings:tiny_huge_island_small",
+    "mario_64_paintings:tall_tall_mountain_small"
+  ]
+}
